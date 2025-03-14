@@ -1,0 +1,330 @@
+body {
+    background: linear-gradient(to right, rgb(172, 155, 251), rgb(255, 255, 255));
+}
+.custom-navbar {
+    background: linear-gradient(to right, rgb(172, 155, 251), rgb(255, 255, 255));
+}
+.profile-img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: solid 3px;
+    border-color: rgb(243, 238, 238);
+    
+}
+
+ul.horizontal-list {
+list-style-type: none; /* Elimina las viñetas predeterminadas */
+margin: 0;
+padding: 0;
+overflow: hidden;
+}
+
+ul.horizontal-list li {
+float: left; /* Coloca los elementos uno al lado del otro */
+margin-right: 20px; /* Espacio entre las viñetas */
+}
+.icons {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: var(--flex-alignment);
+    letter-spacing: 0;
+    padding: 0;
+}
+
+.icons li {
+    position: relative;
+    z-index: 1;
+}
+
+.icons li a {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+
+.icons li a svg {
+    display: block;
+    position: relative;
+}
+
+.icons li a+svg {
+    display: block;
+    height: 100%;
+    left: 0;
+    pointer-events: none;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: -1;
+}
+
+.icons li a .label {
+    display: none;
+}
+
+#icons01 {
+    font-size: 1.75em;
+    gap: 1.125rem;
+}
+
+#icons01:not(:first-child) {
+    margin-top: 0.813rem !important;
+}
+
+#icons01:not(:last-child) {
+    margin-bottom: 0.813rem !important;
+}
+
+#icons01 li a {
+    border-radius: 100%;
+    height: 2em;
+    width: 2em;
+    transition: transform 0.25s ease, color 0.25s ease, background-color 0.25s ease, border-color 0.25s ease;
+}
+
+#icons01 li a svg {
+    height: 60%;
+    width: 60%;
+    transition: fill 0.25s ease;
+}
+
+#icons01 a {
+    background-color: #cc36b3;
+    box-shadow: 0rem 0.5rem 0.5rem 0rem rgba(0, 0, 0, 0.478);
+}
+
+#icons01 a svg {
+    fill: #FFFFFF;
+}
+
+#icons01 li a+svg {
+    transition: transform 0.25s ease, fill 0.25s ease, stroke 0.25s ease;
+}
+
+#icons01 li a:hover {
+    transform: scale(1.1125);
+}
+
+#icons01 li a:hover+svg {
+    transform: scale(1.1125);
+}
+ol,
+ul {
+    list-style: none;
+}
+
+
+.buttons {
+    cursor: default;
+    display: flex;
+    justify-content: var(--flex-alignment);
+    letter-spacing: 0;
+    padding: 0;
+}
+
+.buttons li {
+    max-width: 100%;
+    text-align: var(--alignment);
+}
+
+.buttons li a {
+    align-items: center;
+    justify-content: center;
+    max-width: 100%;
+    text-align: center;
+    text-decoration: none;
+    vertical-align: middle;
+    white-space: nowrap;
+}
+
+#buttons05 {
+    gap: 0.875rem;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+#buttons05:not(:first-child) {
+    margin-top: 0.438rem !important;
+}
+
+#buttons05:not(:last-child) {
+    margin-bottom: 0.438rem !important;
+}
+
+#buttons05 li a {
+    display: inline-flex;
+    width: 30rem;
+    height: 3.5rem;
+    line-height: 3.5rem;
+    padding: 0 0.5rem;
+    vertical-align: middle;
+    text-transform: uppercase;
+    font-family: 'Lato', sans-serif;
+    letter-spacing: 0.175rem;
+    padding-left: calc(0.175rem + 0.5rem);
+    font-size: 0.75em;
+    font-weight: 700;
+    border-radius: 0.5rem;
+    box-shadow: 0rem 0.5rem 0.5rem 0rem rgba(0, 0, 0, 0.541);
+    transition: transform 0.25s ease, color 0.25s ease, background-color 0.25s ease, border-color 0.25s ease;
+}
+
+#buttons05 li a svg {
+    display: block;
+    fill: #FFFFFF;
+    flex-grow: 0;
+    flex-shrink: 0;
+    height: 100%;
+    min-width: 18px;
+    width: 2.34375em;
+    margin-left: -0.125em;
+    margin-right: calc(0.5em + 0.175rem);
+    transition: fill 0.25s ease;
+}
+
+#buttons05 li a .label {
+    direction: var(--site-language-direction);
+    overflow: hidden;
+}
+
+#buttons05 .button {
+    background-color: #cc36b3;
+    color: #FFFFFF;
+}
+
+#buttons05 li a:hover {
+    transform: scale(1.025);
+}
+
+#buttons05 .n01 svg {
+    fill: #FFFFFF;
+}
+
+#buttons05 .n01 {
+    background-color: #cc36b3;
+    color: #FFFFFF;
+}
+
+
+.buttons_style {
+    gap: 0.875rem;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.buttons_style:not(:first-child) {
+    margin-top: 0.438rem !important;
+}
+
+.buttons_style:not(:last-child) {
+    margin-bottom: 0.438rem !important;
+}
+
+.buttons_style li a {
+    display: inline-flex;
+    width: 30rem;
+    height: 3.5rem;
+    line-height: 3.5rem;
+    padding: 0 0.5rem;
+    vertical-align: middle;
+    text-transform: uppercase;
+    font-family: 'Lato', sans-serif;
+    letter-spacing: 0.175rem;
+    padding-left: calc(0.175rem + 0.5rem);
+    font-size: 0.75em;
+    font-weight: 700;
+    border-radius: 0.5rem;
+    box-shadow: 0rem 0.5rem 0.5rem 0rem rgba(0, 0, 0, 0.541);
+    transition: transform 0.25s ease, color 0.25s ease, background-color 0.25s ease, border-color 0.25s ease;
+}
+
+.buttons_style li a svg {
+    display: block;
+    fill: #FFFFFF;
+    flex-grow: 0;
+    flex-shrink: 0;
+    height: 100%;
+    min-width: 18px;
+    width: 2.34375em;
+    margin-left: -0.125em;
+    margin-right: calc(0.5em + 0.175rem);
+    transition: fill 0.25s ease;
+}
+
+.buttons_style li a .label {
+    direction: var(--site-language-direction);
+    overflow: hidden;
+}
+
+.buttons_style .button {
+    background-color: #cc36b3;
+    color: #FFFFFF;
+}
+
+.buttons_style li a:hover {
+    transform: scale(1.025);
+}
+
+.buttons_style .n01 svg {
+    fill: #FFFFFF;
+}
+
+buttons_style .n01 {
+    background-color: #cc36b3;
+    color: #FFFFFF;
+}
+
+.buttons.style1 {
+    gap: 0.875rem;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.buttons.style1 li a {
+    display: inline-flex;
+    width: 30rem;
+    height: 3.5rem;
+    line-height: 3.5rem;
+    padding: 0 0.5rem;
+    vertical-align: middle;
+    text-transform: uppercase;
+    font-family: 'Lato', sans-serif;
+    letter-spacing: 0.175rem;
+    padding-left: calc(0.175rem + 0.5rem);
+    font-size: 0.75em;
+    font-weight: 400;
+    border-radius: 0.5rem;
+    transition: transform 0.25s ease, color 0.25s ease, background-color 0.25s ease, border-color 0.25s ease;
+}
+
+.buttons.style1 li a svg {
+    display: block;
+    fill: #FFFFFF;
+    flex-grow: 0;
+    flex-shrink: 0;
+    height: 100%;
+    min-width: 18px;
+    width: 2.34375em;
+    margin-left: -0.125em;
+    margin-right: calc(0.5em + 0.175rem);
+    transition: fill 0.25s ease;
+}
+
+.buttons.style1 li a .label {
+    direction: var(--site-language-direction);
+    overflow: hidden;
+}
+
+.buttons.style1 .button {
+    color: #FFFFFF;
+    border: solid 2px #FFFFFF;
+}
+
+.buttons.style1 .button svg {
+    fill: #FFFFFF;
+}
+
+.buttons.style1 li a:hover {
+    transform: scale(1.025);
+}
